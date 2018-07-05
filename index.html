@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Open science/Free software</title>
+    
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section><h1>Open Science/Free software</h1>
+          <h2>JJ Merelo, <code>@jjmerelo</code></h2>
+          <h2>S3 Osaka/Kyoto</h2>
+        </section>
+        
+	</section>
+
+        <!-- Free software concept/ Open science -->
+	<section>
+	</section>
+
+	<!-- Organizando el trabajo -->
+	<section>
+	  <section><h1>Organización del trabajo</h1>
+	    <h2>Hace falta repartir las tareas desde el principio</h2>
+	  </section>
+
+	  <section><h1>Uso de <em>Milestones</em> e <em>issues</em></h1>
+	    <h2 class='fragment'><em>Milestones</em>: hitos con fecha "Congreso ZYX"</h2>
+	    <h2 class='fragment'><em>Issues</em>: tareas siempre dentro de un hito</h2>
+	  </section>
+
+	  <section><h1>El trabajo se organiza en tareas</h1>
+	    <h2 class='fragment'>Los commits siempre mencionan una tarea</h2>
+	    <pre class='fragment'><code>git commit -am "Revisa abstract refs #2"</code></pre>
+	    <aside class='notes'>En principio, un issue lo puede asignar quien quiera. También se lo puede uno auto-asignar.</aside>
+	  </section>
+
+	  <section><h1>Los issues se deben asignar a alguien</h1>
+	    <h2 class='fragment'>O mencionarse en el cuerpo del mismo usando @</h2>
+	  </section>
+
+	  <section><h1>Los issues se pueden etiquetar</h1>
+	    <h2 class='fragment'>Mejoras, errores, revisión...</h2>
+	  </section>
+
+	  <section><h1>Issues (y commits) usan markdown</h1>
+	    <h2 class='fragment'>Usarlo para enlaces o nombres de ficheros, por ejemplo</h2>
+	  </section>
+
+	  <section><h1>Usa Markdown con tu editor favorito</h1>
+	    <h2 class='fragment'>O con R Studio</h2>
+	    <aside class='notes'>Igual es un buen momento para instalarse R Studio, que es una herramienta genial para trabajar con R, LaTeX, markdown y un montón de cosas más</aside>
+	  </section>
+	  
+	  <section><h1>Issues se cierran desde un commit</h1>
+	    <h2>Tarea terminada:</h2>
+	    <pre><code>git commit -am "Revisada intro closes #3"</code>
+	    </pre>
+	    <aside class='notes'>Closes, o fixes, o solves, porque se refiere a "bugs"</aside>
+	  </section>
+	  
+	  <section><h1>Ejercicio</h1>
+	    <h2>Comenzar con la organización del proyecto usando GitHub, bitácora</h2>
+	    <h3 class='fragment'>Obtener datos y añadirlos al repo, por ejemplo, describir el proyecto en GitHub...</h3>
+	  </section>
+	</section>
+
+	<!-- Gestionando colaboración -->
+	<section>
+	  <section><h1>Ciencia abierta tiene que ser abierta</h1>
+	    <aside class='notes'>Parece una tautología, pero hay que estar dispuesto a aceptar colaboraciones</aside>
+	  </section>
+
+	  <section><h1>Formas de buscar colaboración</h1>
+	    <ol><li>Issues <em>para principiantes</em></li>
+	      <li>Fichero <code>CONTRIBUTING.md</code></li>
+	      <li>Conexión con redes sociales/grupo Telegram</li>
+	    </ol>
+	  </section>
+
+	  <section><h1><em>Pull request</em>: petición de fusión</h1>
+	    <h2>Para personas que no tengan permiso de escritura en el repositorio</h2>
+	    <aside class='notes'>Los pull requests equivalen a
+	    fusionar dos versiones de un repositorio, y sirven sobre
+	    todo para colaboración ocasional. Se trata de una petición
+	    (request) de un pull (fusión), es decir, alguien te está
+	    pidiendo que tú incorpores a tu repositorio los cambios
+	      que ha hecho</aside>
+	  </section>
+	  
+	  <section><h1>Gestionando <em>pull requests</em></h1>
+	    <h2>Mejor tener una <a href='https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/'>plantilla</a></h2>
+	    <h2>Contestar siempre</h2>
+	    <h2>Revisar y sugerir cambios</h2>
+	    <aside class='notes'>Los PR en GitHub son todo un sistema de revisión e inclusión de código. Permiten comentarios en líneas específicas, comentarios generales, aceptar o solicitar cambios, e incluso pasar tests a los cambios. Bien gestionados, son un gran mecanismo para abrir nuestra ciencia.</aside>
+	  </section>
+
+	</section>
+
+	<!-- Presentando FigShare -->
+	<section>
+	  <section><h1>FigShare permite publicar (casi) todo</h1>
+	    <h2 class='fragment'>Figuras + datos + presentaciones + código</h2>
+	    <h3 class='fragment'>Proporciona DOI bajo demanda</h3>
+	    <aside class='notes'>También papers, claro está. El principal problema es que no esa indexada por Google Scholar</aside>
+	  </section>
+
+	  <section><h1>Conexión con Altmetrics</h1>
+	    <h2>Evaluación del trabajo más allá de las citas</h2>
+	    <h3>Lecturas, descargas...</h3>
+	  </section>
+
+	  <section><h1>Publicación de los datos de visitas</h1>
+	    <h1>En <a href='https://figshare.com/articles/Visitas_a_la_wikipedia_p_gina_Catalu_a_septiembre-octubre_2016_y_2017/5572471'>este enlace</a></h1>
+	    <h2>Licencia CC-BY</h2>
+	  </section>
+
+	  <section><h1>Ejercicio</h1>
+	    <h2>Darse de alta en FigShare y subir gráfica y datos usados anteriormente.</h2>
+	  </section>
+	</section>
+	  
+        <section>
+	    <section><h1>Buenas prácticas</h1>
+	      <h2 class='fragment'>Mantener todos los ficheros
+		juntos</h2>
+	      <h2 class='fragment'>Nombres comunes para directorios:
+		<code>data</code>, <code>script</code>,
+		<code>report</code> o <code>paper</code>
+	      </h2>
+	      <h3 class='fragment'>Comentarios en código o datos</h3>
+	      <aside class='notes'>GitHub, además, permite buscar
+	      fácilmente entre tus ficheros, con lo que es una ventaja
+	      adicional. Todos los datos deben estar en GitHub, con
+	      publicación adicional en otros lugares como FigShare u
+		Open Source Framework</aside>
+	    </section>
+
+	    <section><h1>Publicando todo</h1>
+	      <h2>Trabajo rechazado</h2>
+	      <h2>Información adicional solicitada por revisor</h2>
+	      <h2>Pruebas para establecer parámetros</h2>
+	      <h3>Ponencia sin trabajo publicado</h3>
+	      <aside class='notes'>También pruebas de concepto para
+	    poner a punto el procesamiento de datos, por ejemplo,
+	    gráficos iniciales que no se van a publicar en la versión
+	    final... FigShare y OSF permiten publicación rápida,
+		inmediata y citable</aside>
+	    </section>
+	  </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+      // Display a presentation progress bar
+      progress: true,
+      
+      // Display the page number of the current slide
+      slideNumber: true,
+      
+      // Push each slide change to the browser history
+      history: true,
+      
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+      width: "90%",
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
+    </script>
+  </body>
+</html>
