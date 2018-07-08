@@ -35,72 +35,111 @@
         <!-- Free software concept/ Open science -->
 	<section>
           <section><h1>Free your software</h1></section>
-          <section><h1>Open your content</h1></section>
-          <section><h1>Release your data</h1></section>
+	  <section><h1>Open your <strong>source</strong></h1>
+	    <h2 class='fragment'>Upload to <a href='https://github.com'>GitHub</a></h2>
+	    <aside class='notes'>You can also use GitLab. Do it as early as possible, before writing the first line of code. </aside>
+	  </section>
+	  <section><h1>Release <strong>early</strong></h1>
+	    <h1 class='fragment'>Release <strong>often</strong></h1>
+	    <aside class='notes'>Early as in before writing the first line of code. Often, as in every time a milestone has been reached: submitted to a conference, accepted in the conference</aside>
+	  </section>
+	  <section><h1>Use an open <strong>LICENSE</strong></h1>
+	    <aside class='notes'>Without a license, it's only open source but all rights are reserved, including copyright</aside>
+	  </section>
+	  <section><h1>Science goes further than <strong>papers</strong></h1>
+	    <aside class='notes'>You can do interactive notebooks (which we are going to learn in this school), demo websites, modules released as libraries, lots of things. But all this starts with data</aside>
+	  </section>
 	</section>
 
+	<section>
+          <section>
+	    <h1>Release your data</h1>
+	    <h1 class='fragment'>Make your science <strong>reproductible</strong></h1>
+	    <aside class='notes'>Make it an integral part of the software repository. Automatize running so that it's easy to do and reproduce. Make your sciende reproductible, first for you and then for the rest.</aside>
+	  </section>
+
+	  <section><h1>Free your <strong>configuration</strong> data</h1>
+	    <h1 class='fragment'>... and <strong>experimental</strong> data</h1>
+	  </section>
+
+	  <section><h1>Use open data <strong>licenses</strong></h1>
+	    <h1 class='fragment'>Upload them too to Figshare/Researchgate</h1>
+	    <aside class='notes'>These sites allow you to obtain an DOI for your data, so that it can be referenced by itself or in conjunction with reports describing them</aside>
+	  </section>
+	</section>
+
+	<section>
+	  <section><h1>Open your content</h1></section>
+
+	  <section><h1>Use <strong>open</strong> repositories</h1>
+	    <aside class='notes'>Use github/gitlab for working on your papers. There are many advantages, that we will see in the next section</aside>
+	  </section>
+
+	  <section><h1>Publish openly</h1>
+	    <h2 class='fragment'>Whenever possible</h2>
+	    <aside class='notes'>Some publishing houses keep the copyright of what you publish with them, but there are many ways you can still open it, from using paid open access media, to publishing drafts or partial results.</aside>
+	  </section>
+	</section>
+	
 	<!-- Organizando el trabajo -->
 	<section>
-	  <section><h1>Organización del trabajo</h1>
-	    <h2>Hace falta repartir las tareas desde el principio</h2>
+	  <section><h1>Workflow</h1>
+	    <h2>Assign tasks from the beginning</h2>
 	  </section>
 
-	  <section><h1>Uso de <em>Milestones</em> e <em>issues</em></h1>
-	    <h2 class='fragment'><em>Milestones</em>: hitos con fecha "Congreso ZYX"</h2>
-	    <h2 class='fragment'><em>Issues</em>: tareas siempre dentro de un hito</h2>
+	  <section><h1>Use <em>Milestones</em> and <em>issues</em></h1>
+	    <h2 class='fragment'><em>Milestones</em>: dated, like "ZYX Conference"</h2>
+	    <h2 class='fragment'><em>Issues</em>: tasks within a milestone.</h2>
 	  </section>
 
-	  <section><h1>El trabajo se organiza en tareas</h1>
-	    <h2 class='fragment'>Los commits siempre mencionan una tarea</h2>
-	    <pre class='fragment'><code>git commit -am "Revisa abstract refs #2"</code></pre>
+	  <section><h1>Work <strong>always</strong> organized in tasks</h1>
+	    <h2 class='fragment'>Commits always mention a task</h2>
+	    <pre class='fragment'><code>git commit -am "Reviews abstract refs #2"</code></pre>
 	    <aside class='notes'>En principio, un issue lo puede asignar quien quiera. También se lo puede uno auto-asignar.</aside>
 	  </section>
 
-	  <section><h1>Los issues se deben asignar a alguien</h1>
-	    <h2 class='fragment'>O mencionarse en el cuerpo del mismo usando @</h2>
+	  <section><h1><strong>Every</strong> issue gets an assignee</h1>
+	    <h2 class='fragment'>You can mention someone using @</h2>
 	  </section>
 
-	  <section><h1>Los issues se pueden etiquetar</h1>
-	    <h2 class='fragment'>Mejoras, errores, revisión...</h2>
+	  <section><h1><strong>Tag</strong> issues if convenient</h1>
+	    <h2 class='fragment'>Errors, improvements, revision...</h2>
 	  </section>
 
-	  <section><h1>Issues (y commits) usan markdown</h1>
-	    <h2 class='fragment'>Usarlo para enlaces o nombres de ficheros, por ejemplo</h2>
+	  <section><h1>Issues (and commits) use <em>markdown</em></h1>
+	    <h2 class='fragment'>Use it to link files, or to reference a paper</h2>
 	  </section>
 
-	  <section><h1>Usa Markdown con tu editor favorito</h1>
-	    <h2 class='fragment'>O con R Studio</h2>
+	  <section><h1>Create markdown with your favorite editor</h1>
+	    <h2 class='fragment'>Or with R Studio</h2>
 	    <aside class='notes'>Igual es un buen momento para instalarse R Studio, que es una herramienta genial para trabajar con R, LaTeX, markdown y un montón de cosas más</aside>
 	  </section>
 	  
-	  <section><h1>Issues se cierran desde un commit</h1>
-	    <h2>Tarea terminada:</h2>
-	    <pre><code>git commit -am "Revisada intro closes #3"</code>
+	  <section><h1><strong>Always</strong> close issues from a commit</h1>
+	    <h2>Finishes task:</h2>
+	    <pre><code>git commit -am "Intro revised closes #3"</code>
 	    </pre>
-	    <aside class='notes'>Closes, o fixes, o solves, porque se refiere a "bugs"</aside>
+	    <aside class='notes'>Closes, o fixes, o solves, porque se refiere a "bugs". We are going to put this in practice when we start with the project.</aside>
 	  </section>
 	  
-	  <section><h1>Ejercicio</h1>
-	    <h2>Comenzar con la organización del proyecto usando GitHub, bitácora</h2>
-	    <h3 class='fragment'>Obtener datos y añadirlos al repo, por ejemplo, describir el proyecto en GitHub...</h3>
-	  </section>
+
 	</section>
 
 	<!-- Gestionando colaboración -->
 	<section>
-	  <section><h1>Ciencia abierta tiene que ser abierta</h1>
+	  <section><h1>Open science needs to be <strong>open</strong></h1>
 	    <aside class='notes'>Parece una tautología, pero hay que estar dispuesto a aceptar colaboraciones</aside>
 	  </section>
 
-	  <section><h1>Formas de buscar colaboración</h1>
-	    <ol><li>Issues <em>para principiantes</em></li>
-	      <li>Fichero <code>CONTRIBUTING.md</code></li>
-	      <li>Conexión con redes sociales/grupo Telegram</li>
+	  <section><h1>Open to collaboration</h1>
+	    <ol><li><em>Beginner</em> issues</li>
+	      <li><code>CONTRIBUTING.md</code></li>
+	      <li>Link to social networks/Telegram group</li>
 	    </ol>
 	  </section>
 
-	  <section><h1><em>Pull request</em>: petición de fusión</h1>
-	    <h2>Para personas que no tengan permiso de escritura en el repositorio</h2>
+	  <section><h1><em>Pull request</em>: requesting a merge</h1>
+	    <h2>For those without write permission</h2>
 	    <aside class='notes'>Los pull requests equivalen a
 	    fusionar dos versiones de un repositorio, y sirven sobre
 	    todo para colaboración ocasional. Se trata de una petición
@@ -109,10 +148,10 @@
 	      que ha hecho</aside>
 	  </section>
 	  
-	  <section><h1>Gestionando <em>pull requests</em></h1>
-	    <h2>Mejor tener una <a href='https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/'>plantilla</a></h2>
-	    <h2>Contestar siempre</h2>
-	    <h2>Revisar y sugerir cambios</h2>
+	  <section><h1>Managing <em>pull requests</em></h1>
+	    <h2>Best with a <a href='https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/'>template</a></h2>
+	    <h2><strong>Always</strong> answer</h2>
+	    <h2>Review and suggest changes</h2>
 	    <aside class='notes'>Los PR en GitHub son todo un sistema de revisión e inclusión de código. Permiten comentarios en líneas específicas, comentarios generales, aceptar o solicitar cambios, e incluso pasar tests a los cambios. Bien gestionados, son un gran mecanismo para abrir nuestra ciencia.</aside>
 	  </section>
 
@@ -120,36 +159,35 @@
 
 	<!-- Presentando FigShare -->
 	<section>
-	  <section><h1>FigShare permite publicar (casi) todo</h1>
-	    <h2 class='fragment'>Figuras + datos + presentaciones + código</h2>
-	    <h3 class='fragment'>Proporciona DOI bajo demanda</h3>
+	  <section><h1>FigShare for publishing (almost) everything</h1>
+	    <h2 class='fragment'>Figures + data + code + reports</h2>
+	    <h3 class='fragment'>DOI on demand</h3>
 	    <aside class='notes'>También papers, claro está. El principal problema es que no esa indexada por Google Scholar</aside>
 	  </section>
 
-	  <section><h1>Conexión con Altmetrics</h1>
-	    <h2>Evaluación del trabajo más allá de las citas</h2>
-	    <h3>Lecturas, descargas...</h3>
+	  <section><h1>Connected with Altmetrics</h1>
+	    <h2>Evaluating work beyond simple citations</h2>
+	    <h3>Reads, downloads...</h3>
 	  </section>
 
-	  <section><h1>Publicación de los datos de visitas</h1>
+	  <section><h1>Example</h1>
 	    <h1>En <a href='https://figshare.com/articles/Visitas_a_la_wikipedia_p_gina_Catalu_a_septiembre-octubre_2016_y_2017/5572471'>este enlace</a></h1>
 	    <h2>Licencia CC-BY</h2>
 	  </section>
 
-	  <section><h1>Ejercicio</h1>
-	    <h2>Darse de alta en FigShare y subir gráfica y datos usados anteriormente.</h2>
+	  <section><h1>Researchgate is a good alternative</h1>
+	    <h2>And is indexed by Google Scholar</h2>
 	  </section>
 	</section>
 	  
         <section>
-	    <section><h1>Buenas prácticas</h1>
-	      <h2 class='fragment'>Mantener todos los ficheros
-		juntos</h2>
-	      <h2 class='fragment'>Nombres comunes para directorios:
+	  <section><h1><strong>Best</strong> practices</h1>
+	      <h2 class='fragment'>Keep files together</h2>
+	      <h2 class='fragment'>Conventional folder names
 		<code>data</code>, <code>script</code>,
 		<code>report</code> o <code>paper</code>
 	      </h2>
-	      <h3 class='fragment'>Comentarios en código o datos</h3>
+	      <h3 class='fragment'>Use comments for code and data</h3>
 	      <aside class='notes'>GitHub, además, permite buscar
 	      fácilmente entre tus ficheros, con lo que es una ventaja
 	      adicional. Todos los datos deben estar en GitHub, con
@@ -157,11 +195,11 @@
 		Open Source Framework</aside>
 	    </section>
 
-	    <section><h1>Publicando todo</h1>
-	      <h2>Trabajo rechazado</h2>
-	      <h2>Información adicional solicitada por revisor</h2>
-	      <h2>Pruebas para establecer parámetros</h2>
-	      <h3>Ponencia sin trabajo publicado</h3>
+	    <section><h1>Publish everything</h1>
+	      <h2>Rejected paper</h2>
+	      <h2>Additional information requested by reviewer</h2>
+	      <h2>Tests to establish good configuration</h2>
+	      <h3>Report for unpublished paper</h3>
 	      <aside class='notes'>También pruebas de concepto para
 	    poner a punto el procesamiento de datos, por ejemplo,
 	    gráficos iniciales que no se van a publicar en la versión
@@ -170,6 +208,9 @@
 	    </section>
 	  </section>
 
+	<section><h1>Enjoy S3</h1>
+	  <h1 class='fragment'>May it be inspiring and educative</h1>
+	</section>
       </div>
     </div>
 
