@@ -1,4 +1,5 @@
 # from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+@import url('https://fonts.googleapis.com/css?family=Prosto+One');
 
 blockquote {
   background: #f9f9f9;
